@@ -15,8 +15,8 @@ import jakarta.ws.rs.core.MediaType;
 import java.time.LocalDate;
 import java.util.List;
 
+// Need to change return types to responses
 @Path("/report")
-
 public class ReportController {
 
     @Inject

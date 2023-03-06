@@ -15,6 +15,7 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
+// Need to change return types to responses
 @Path("/client")
 public class ClientController {
 
