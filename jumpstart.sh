@@ -3,18 +3,20 @@
 # Helper script to run Jakarta EE Jumpstart project
 
 function deploy() {
-  mvn clean package -DskipTests
+  sudo mvn clean package -DskipTests
+  # sudo mvn install
   docker-compose up -d
+  # docker-compose up --force-recreate
 }
 
 function shutdown() {
   docker-compose stop
-  mvn clean
+  sudo mvn clean
 }
 
 function clean() {
   docker-compose down
-  mvn clean
+  sudo mvn clean
 }
 
 COMMAND="${1:-help}"

@@ -21,7 +21,7 @@ public class GreetingService {
 	public JsonObject greet(final String name) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		return Json.createObjectBuilder()
-				.add("greeting", "Hello there " + name)
+				.add("greeting", "Hi there " + name)
 				.add("message", "Getting started with Jakarta EE!")
 				.add("platform", "Jakarta EE")
 				.add("platformVersion", propertyProvider.getJakartaVersion())

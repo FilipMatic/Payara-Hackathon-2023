@@ -25,8 +25,9 @@ services:
       PMA_ARBITRARY: 1
       PMA_USER: root
       PMA_PASSWORD: root
+  
   app:
-    image: jee/jumpstart
+    image: payara-hackathon
     ports:
       - "8080:8080"
       - "4848:4848"
