@@ -7,3 +7,6 @@ The project uses Payara Server 6 Community running on JDK 17, pulled in through 
 
 ### Running the project
 The project can be packaged as a docker image using the bundled Dockerfile. It also has a docker-compose file that comes with MySQL database should you be interested in setting up a persistent storage for your application (not requirement though). By default, Jakarta Persistence will use an in-memory database from the bundled Payara Server. 
+
+### Important Note
+This project is incomplete and will continue to receive updates after the deadline for hackathon.
